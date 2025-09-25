@@ -20,23 +20,23 @@
 
 import streamlit as st
 
+st.title("🚗 Car Future - Aluguel de Carros")
+st.sidebar.title("🏢 Mendesrm Motors")
 st.sidebar.image("logo.png")
-st.sidebar.title("Mendesrm motors")
 
 carros = [ "BMW X1", "Volvo EX30", "BMW Série 3", "Mercedes-Benz Classe S", "Porsche 911", "Audi Q5"]
 opção = st.sidebar.selectbox("Escolha o carro que foi alugado", carros)
 
-st.title("Car Future - Alugel de Carros")
 
 
 if opção == "BMW X1":
-    st.image("BMW X1.png",width=500)
+    st.image("BMW X1.png")
     st.write("SUV compacto de luxo que combina potência e conforto. Perfeito para dirigir na cidade ou na estrada com tecnologia de ponta e espaço para toda a família. Sinta a experiência de dirigir um carro premium e se surpreenda com cada detalhe.") 
 elif opção == "Volvo EX30": 
     st.image("Volvo EX30.png") 
     st.write("Carro elétrico de luxo que combina sustentabilidade e sofisticação. Segurança máxima, design moderno e tecnologia inteligente que transforma cada viagem em um momento único.") 
 elif opção == "BMW Série 3": 
-    st.image("BMW Série 3.png") 
+    st.image("BMW 320I.png") 
     st.write("Sedan esportivo que entrega desempenho impressionante e elegância incomparável. Interior sofisticado e tecnologia avançada que tornam cada trajeto prazeroso e exclusivo.") 
 elif opção == "Mercedes-Benz Classe S": 
     st.image("Mercedes-Benz Classe S.png") 
